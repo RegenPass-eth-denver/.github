@@ -3,6 +3,9 @@
 ## Short Description
 RegenPass is a next-generation POAP (Proof of Attendance Protocol) platform that transforms event participation into a dynamic, interactive digital experience. By combining geo-location, augmented reality (AR), AI-powered booth recognition, and cross-chain minting via CCIP/Chainlink, RegenPass enables attendees to collect unique, branded POAPs that serve as verifiable proof of their participation—minted on the ideal blockchain network based on the event booth detected.
 
+![image](https://github.com/user-attachments/assets/ce6c871a-468a-4a0c-8c76-9db9b790acb7)
+
+
 ## Key Features
 - **Seamless Onboarding & Geo-Verification**  
   Quickly register and verify attendance using geo-location to ensure participants are within designated event zones.
