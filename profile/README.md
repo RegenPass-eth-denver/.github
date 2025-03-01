@@ -5,8 +5,12 @@ RegenPass is a next-generation POAP (Proof of Attendance Protocol) platform that
 
 ![image](https://github.com/user-attachments/assets/ce6c871a-468a-4a0c-8c76-9db9b790acb7)
 
+## Contract Details
+- **Base Sepolia Cross Chain POAP**: [0x2D2B9Bf62b0143a8D68eD4A7063E5F50244dFC81](https://sepolia.basescan.org/address/0x2D2B9Bf62b0143a8D68eD4A7063E5F50244dFC81)
+- **Ethereum Sepolia Cross Chain POAP**: [0xefA8f407FC504A45ca2079bD5C1B087a81C38F2a](https://sepolia.etherscan.io/address/0xefA8f407FC504A45ca2079bD5C1B087a81C38F2a)
+
 - **Deployment**:
-  - **Base Sepolia**: The primary contract is deployed here. Agent initiate cross-chain mint requests from this chain using Image Processing.
+  - **Base Sepolia**: The primary contract is deployed here. An agent initiates cross-chain mint requests from this chain using Image Processing.
   - **Ethereum Sepolia & Arbitrum Sepolia**: Destination contracts are deployed on these chains to receive and process cross-chain minting requests.
   
 - **Direct Minting**:  
@@ -29,8 +33,8 @@ Cross Chain Mint transaction can be viewed here:
 - **Immersive AR Experience**  
   Engage with dynamic AR assets as soon as the camera opens, enhancing the in-person experience with interactive digital overlays.
 
-- **AI-Powered Booth Recognition**  
-  Utilize AI to process booth banners and accurately determine the associated chain (e.g., Chainlink or Base), which in turn dictates the style of the dynamic AR POAP displayed.
+- **AI-Powered Booth Recognition & Agent Flow**  
+  As soon as the camera activates, the integrated AI agent begins scanning the image. This real-time analysis not only recognizes booth banners and identifies the associated chain (e.g., Chainlink or Base) but also dynamically provides the client with a tailored transaction builder. This ensures that the correct minting process is initiated based on the detected chain booth.
 
 - **Cross-Chain POAP Minting via CCIP/Chainlink**  
   Initiate a mint function on Sepolia that leverages CCIP to direct the actual minting on the target blockchain as determined by the recognized booth, ensuring optimal cross-chain interoperability.
@@ -53,3 +57,6 @@ Cross Chain Mint transaction can be viewed here:
 
 - **Marketing & Promotional Campaigns**  
   Enhance event marketing by offering exclusive, collectible digital rewards that can double as discount coupons or access passes for future events.
+
+
+
