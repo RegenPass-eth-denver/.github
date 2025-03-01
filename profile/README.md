@@ -6,6 +6,7 @@ RegenPass is a next-generation POAP (Proof of Attendance Protocol) platform that
 ![image](https://github.com/user-attachments/assets/ce6c871a-468a-4a0c-8c76-9db9b790acb7)
 
 ## Contract Details
+- **Chainlink VRF Random Generator Contract**: [0x9870b407fD14351818cE1424063724E4a5C0FFC2](https://base-sepolia.blockscout.com/address/0x9870b407fD14351818cE1424063724E4a5C0FFC2)
 - **Base Sepolia Cross Chain POAP**: [0x2D2B9Bf62b0143a8D68eD4A7063E5F50244dFC81](https://sepolia.basescan.org/address/0x2D2B9Bf62b0143a8D68eD4A7063E5F50244dFC81)
 - **Ethereum Sepolia Cross Chain POAP**: [0xefA8f407FC504A45ca2079bD5C1B087a81C38F2a](https://sepolia.etherscan.io/address/0xefA8f407FC504A45ca2079bD5C1B087a81C38F2a)
 
@@ -25,6 +26,11 @@ Cross Chain Mint transaction can be viewed here:
 [View Transaction on Chainlink CCIP](https://ccip.chain.link/tx/0x67089e7792bc83b4139052d377f4dccf37e59c7f3c786fc7db2c9eef427aae41)
 
 ![image](https://github.com/user-attachments/assets/d6d2d469-4357-4284-a10a-443c7d8da919)
+
+VRF Chainlink Generator  
+[View Transaction on Blockscout](https://base-sepolia.blockscout.com/tx/0x6c726768a5ebadb11fdf152dd445d6872ff2457d16dae2ae4dc6cf06b15709a6)
+
+![image](https://github.com/user-attachments/assets/6dea79d9-759d-4833-9217-e07631a4fbc8)
 
 ## Key Features
 - **Seamless Onboarding & Geo-Verification**  
@@ -58,5 +64,33 @@ Cross Chain Mint transaction can be viewed here:
 - **Marketing & Promotional Campaigns**  
   Enhance event marketing by offering exclusive, collectible digital rewards that can double as discount coupons or access passes for future events.
 
+## User Interaction and Data Flow
+1. **Geo-Verification**:  
+   The user arrives at the event and is geo-verified to ensure they are within the designated event zone.
+2. **Booth Scanning**:  
+   The user scans a booth using their mobile camera.
+3. **AI Analysis**:  
+   The AI agent analyzes booth banners to determine the corresponding blockchain.
+4. **AR Engagement**:  
+   Augmented reality overlays provide interactive digital assets related to the event, enhancing the overall experience.
+5. **Transaction Building**:  
+   A tailored transaction builder is provided based on the detected blockchain.
+6. **Minting Confirmation**:  
+   Upon user confirmation, the transaction is executed on the correct chain via CCIP.
+7. **POAP Issuance**:  
+   The POAP is minted and immediately displayed in the user’s wallet.
+8. **Leaderboard & Random Winner Selection**:  
+   The user is added to a leaderboard, where lucky winners are selected using Chainlink VRF for fair and transparent random selection, granting exclusive event-specific perks.
 
+## Project Architecture and Development Process
+- **Frontend**:  
+  A mobile-first web interface with integrated camera functionality for real-time scanning.
+- **Backend**:  
+  Incorporates AI-powered booth recognition, geo-fencing for event verification, and AR enhancements.
+- **Smart Contracts**:  
+  Deployed on Base Sepolia & Ethereum Sepolia, supporting both direct and cross-chain minting.
+- **Cross-Chain Execution**:  
+  Leverages Chainlink CCIP for seamless cross-chain POAP minting.
+- **Random Winner Selection**:  
+  Utilizes Chainlink VRF to fairly select lucky winners among event attendees for exclusive rewards.
 
