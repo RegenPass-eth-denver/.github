@@ -5,6 +5,22 @@ RegenPass is a next-generation POAP (Proof of Attendance Protocol) platform that
 
 ![image](https://github.com/user-attachments/assets/ce6c871a-468a-4a0c-8c76-9db9b790acb7)
 
+- **Deployment**:
+  - **Base Sepolia**: The primary contract is deployed here. Agent initiate cross-chain mint requests from this chain using Image Processing.
+  - **Ethereum Sepolia & Arbitrum Sepolia**: Destination contracts are deployed on these chains to receive and process cross-chain minting requests.
+  
+- **Direct Minting**:  
+  The direct mint function no longer has the restriction that previously limited it to Arbitrum Sepolia. This change enables direct minting on any chain, including Base Sepolia.
+  
+- **Cross-Chain Minting**:  
+  The `crossChainMint` function is now called on Base Sepolia. Once invoked, the Chainlink CCIP router (simulated via the CCIPLocalSimulatorFork) routes the mint request to the destination chain where the NFT is minted.
+
+## Transaction Link
+
+Cross Chain Mint transaction can be viewed here:  
+[View Transaction on Chainlink CCIP](https://ccip.chain.link/tx/0x67089e7792bc83b4139052d377f4dccf37e59c7f3c786fc7db2c9eef427aae41)
+
+![image](https://github.com/user-attachments/assets/d6d2d469-4357-4284-a10a-443c7d8da919)
 
 ## Key Features
 - **Seamless Onboarding & Geo-Verification**  
